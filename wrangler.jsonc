@@ -3,9 +3,6 @@
   "name": "discord-watch-bot",
   "main": "src/index.ts",
   "compatibility_date": "2026-08-14",
-  "limits": {
-    "subrequests": 50
-  },
   "durable_objects": {
     "bindings": [
       {
