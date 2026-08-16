@@ -1,0 +1,21 @@
+{
+  "name": "discord-watch-bot",
+  "version": "4.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test",
+    "typecheck": "tsc --noEmit && tsc -p test/tsconfig.json --noEmit",
+    "register": "node scripts/register-commands.mjs"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.21.3",
+    "@cloudflare/workers-types": "^5.20260816.1",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.123.0"
+  }
+}

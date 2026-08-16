@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "discord-watch-bot",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-14",
+  "limits": {
+    "subrequests": 50
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "MONITOR_SCHEDULER",
+        "class_name": "MonitorScheduler"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["MonitorScheduler"]
+    }
+  ]
+}

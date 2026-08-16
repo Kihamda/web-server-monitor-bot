@@ -1,0 +1,4 @@
+# Copy this file to .dev.vars only for local development.
+# Never commit real credentials.
+DISCORD_PUBLIC_KEY="replace-with-discord-application-public-key"
+DISCORD_TOKEN="replace-with-discord-bot-token"
