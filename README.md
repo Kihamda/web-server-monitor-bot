@@ -1,6 +1,10 @@
-# Discord Watch Bot v4
+# Webサーバ監視bot
 
-Discord Watch Botは、登録したHTTP/HTTPS URLが長期間停止したまま見逃される事態を、Cloudflare Workers Freeの範囲で防ぐための個人運用Botです。
+<p align="center">
+  <img src="assets/web-server-monitor-icon.png" alt="Webサーバ監視botのアイコン" width="192">
+</p>
+
+Webサーバ監視botは、登録したHTTP/HTTPS URLが長期間停止したまま見逃される事態を、Cloudflare Workers Freeの範囲で防ぐための個人運用Botです。
 高頻度な死活監視や可用性集計ではなく、1日1回程度の確認を、平常時の通信、書き込み、通知を抑えて続けることに目的を絞っています。
 
 ## このBotが解く問題
